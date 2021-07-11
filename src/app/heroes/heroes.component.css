@@ -1,0 +1,57 @@
+.heroList {
+  margin: 9px;
+  background-color: rgb(172, 175, 175);
+  width: 200px;
+  border-radius: 4px 10px 10px 4px;
+  cursor: pointer;
+  height: 1.8em;
+}
+
+.heroList:hover {
+  background-color: #fafafa;
+  color: #525252;
+}
+.heroList:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+.heroList #idList {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #000000;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+}
+:hover #idList {
+  animation: colorChange 2s 1;
+}
+
+@keyframes colorChange {
+  0% {
+    background: red;
+  }
+  25% {
+    background: rgb(110, 110, 104);
+  }
+  75% {
+    background: rgb(155, 155, 146);
+  }
+  100% {
+    background: rgb(235, 231, 231);
+  }
+}
+
+.heroDetail {
+  background-color: rgb(172, 175, 175);
+  width: 500px;
+  height: 500px;
+}
+
+#titleDetail {
+  padding: 10px 10px 10px 140px;
+}

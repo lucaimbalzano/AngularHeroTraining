@@ -1,1 +1,21 @@
-<p>heroes component!</p>
+<div>
+  <ul>
+    <div (click)="selectHero(hero)" *ngFor="let hero of heroList">
+      <div class="heroList">
+        <span id="idList">{{ hero.id }}</span>
+        <label for="name"></label><b>{{ hero.name }}</b>
+      </div>
+    </div>
+  </ul>
+</div>
+<div class="heroDetail" *ngIf="selectedHero">
+  <h3 id="titleDetail">### Hero Details ###</h3>
+  ##<b><label for="name"> id: </label></b> {{ selectedHero.id }} ## <br />
+  ##<b><label for="name"> name: </label></b>
+  <input
+    type="text"
+    [(ngModel)]="selectedHero.name"
+    placeHolder="Name of Hero.."
+  />
+  ##
+</div>
