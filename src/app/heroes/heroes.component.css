@@ -15,7 +15,7 @@
   background-color: #525252;
   color: #fafafa;
 }
-.heroList #idList {
+#idList {
   display: inline-block;
   font-size: small;
   color: white;
@@ -44,14 +44,4 @@
   100% {
     background: rgb(235, 231, 231);
   }
-}
-
-.heroDetail {
-  background-color: rgb(172, 175, 175);
-  width: 500px;
-  height: 500px;
-}
-
-#titleDetail {
-  padding: 10px 10px 10px 140px;
 }

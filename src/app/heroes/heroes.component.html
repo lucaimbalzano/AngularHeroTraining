@@ -8,14 +8,4 @@
     </div>
   </ul>
 </div>
-<div class="heroDetail" *ngIf="selectedHero">
-  <h3 id="titleDetail">### Hero Details ###</h3>
-  ##<b><label for="name"> id: </label></b> {{ selectedHero.id }} ## <br />
-  ##<b><label for="name"> name: </label></b>
-  <input
-    type="text"
-    [(ngModel)]="selectedHero.name"
-    placeHolder="Name of Hero.."
-  />
-  ##
-</div>
+<app-heroes-detail [hero]="selectedHero"></app-heroes-detail>

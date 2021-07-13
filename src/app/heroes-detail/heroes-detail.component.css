@@ -1,0 +1,9 @@
+.heroDetail {
+  background-color: rgb(172, 175, 175);
+  width: 500px;
+  height: 500px;
+}
+
+#titleDetail {
+  padding: 10px 10px 10px 140px;
+}
