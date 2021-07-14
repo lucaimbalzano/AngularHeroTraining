@@ -1,0 +1,40 @@
+.messageContainer {
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  height: 20vh;
+  width: 40vh;
+  text-shadow: 0 0 5px #c8c8c8;
+  color: white;
+  margin: 50px;
+}
+
+.btn {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+}
+
+.btn:hover {
+  background-color: #070504;
+  box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#messages {
+  margin-left: 10%;
+  margin: 5px;
+}
