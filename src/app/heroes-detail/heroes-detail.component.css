@@ -1,9 +1,28 @@
 .heroDetail {
-  background-color: rgb(172, 175, 175);
-  width: 500px;
-  height: 500px;
+  background-color: rgb(161, 154, 154);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.75), black 120%);
+  height: 20vh;
+  width: 45vh;
+  text-shadow: 0 0 5px #c8c8c8;
+  color: rgb(0, 0, 0);
+  margin: 50px;
+  border-style: outset;
 }
 
 #titleDetail {
   padding: 10px 10px 10px 140px;
+}
+
+.contentDetail {
+  margin-left: 20%;
+}
+
+.input {
+  background-color: #777676;
+  border: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  transition: 0.3s box-shadow;
+}
+.input:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
