@@ -1,5 +1,10 @@
+<nav>
+  <a routerLink="/Heroes">Heroes</a>
+</nav>
 <h2 style="margin-left: 100px">
   <b>{{ title }}</b>
 </h2>
-<app-heroes></app-heroes>
+<!-- The <router-outlet> tells the router where to display routed views -->
+<router-outlet></router-outlet>
+<!-- <app-heroes></app-heroes> Without routing -->
 <app-messages></app-messages>
