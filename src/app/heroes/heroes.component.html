@@ -2,10 +2,11 @@
   <ul>
     <div (click)="selectHero(hero)" *ngFor="let hero of heroList">
       <div class="heroList">
-        <span id="idList">{{ hero.id }}</span>
-        <label for="name"></label><b>{{ hero.name }}</b>
+        <a routerLink="/Details/{{ hero.id }}"
+          ><span id="idList">{{ hero.id }}</span> <label for="name"></label
+          ><b>{{ hero.name }}</b>
+        </a>
       </div>
     </div>
   </ul>
 </div>
-<app-heroes-detail [hero]="selectedHero"></app-heroes-detail>
