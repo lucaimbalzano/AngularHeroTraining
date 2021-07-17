@@ -21,11 +21,16 @@ export class HeroesDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getHero();
   }
 
   getHero():void {
     const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
     this.heroService.getHero(id)
       .subscribe(hero => this.hero = hero);
+  }
+
+  goBack():void{
+    this.location.back();
   }
 }
