@@ -14,9 +14,18 @@ export class HeroesDetailComponent implements OnInit {
   @Input() 
   hero?: Hero;
 
-  constructor() { }
+  constructor(
+    private activatedRoute : ActivatedRoute,
+    private location : Location,
+    private heroService : HeroService
+  ) { }
 
   ngOnInit(): void {
   }
 
+  getHero():void {
+    const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
+    this.heroService.getHero(id)
+      .subscribe(hero => this.hero = hero);
+  }
 }
